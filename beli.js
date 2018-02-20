@@ -6,6 +6,7 @@ function beli(uang, obj, cb){
       cb(uang - obj.harga)
     }else{
       console.log(`uang gk cukup nih buat beli ${obj.item} yang harganya ${obj.harga}, butuh uang lagi sejumlah ${(uang - obj.harga)*-1}`);
+      return ''
       cb(uang);
     }
   }, obj.waktu);
