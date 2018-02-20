@@ -1,5 +1,6 @@
 function beli(uang, obj, cb){
   console.log(`Saya pergi membeli ${obj.item}`)
+
   setTimeout(function(){
     let kembalian = uang - obj.harga
     if (kembalian > 0) {
@@ -10,6 +11,7 @@ function beli(uang, obj, cb){
       cb(0)
     }
   }, obj.waktu);
+
 }
 
 module.exports = beli;
