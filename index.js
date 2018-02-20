@@ -4,31 +4,11 @@ const beli = require('./beli.js');
   harga: 1000,
   waktu: 1000
 }
-const printSisaKembalian = (data) => {
-  console.log(`Sisa Kembalian : ${data}`);
+const belanja = (uangBelanja) => {
+  if(uangBelanja <= 0 ){
+    console.log('Belanja Selesai');
+  } else {
+    beli(uangBelanja,belanjaan,belanja);
+  }
 }
-beli(5000,belanjaan,printSisaKembalian);
- belanjaan = {
-  item: 'celanan',
-  harga: 3000,
-  waktu: 1000
-}
-beli(5000,belanjaan,printSisaKembalian);
- belanjaan = {
-  item: 'topi',
-  harga: 500,
-  waktu: 1000
-}
-beli(5000,belanjaan,printSisaKembalian);
- belanjaan = {
-  item: 'jaket',
-  harga: 5000,
-  waktu: 1000
-}
-beli(5000,belanjaan,printSisaKembalian);
- belanjaan = {
-  item: 'dompet',
-  harga: 2500,
-  waktu: 1000
-}
-beli(5000,belanjaan,printSisaKembalian);
+belanja(10000);
