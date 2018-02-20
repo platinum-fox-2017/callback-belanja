@@ -13,11 +13,11 @@ class objItem {
     }
 }
 
-beli(uang, new objItem('Baju',30000,Date.now()),function(kembalian){
-    beli(kembalian, new objItem('Celana',30000,Date.now()),function(kembalian){
-        beli(kembalian, new objItem('Topi',30000,Date.now()),function(kembalian){
-            beli(kembalian, new objItem('Celana Dalam',30000,Date.now()),function(kembalian){
-                beli(kembalian, new objItem('Rok',30000,Date.now()),function(kembalian){
+beli(uang, new objItem('Baju',30000,1),function(kembalian){
+    beli(kembalian, new objItem('Celana',30000,1),function(kembalian){
+        beli(kembalian, new objItem('Topi',30000,1),function(kembalian){
+            beli(kembalian, new objItem('Celana Dalam',30000,1),function(kembalian){
+                beli(kembalian, new objItem('Rok',30000,1),function(kembalian){
                     console.log(`Sisa Kembalian Anda: ${kembalian}`);
                 });
             });
